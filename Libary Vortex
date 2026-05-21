@@ -1433,6 +1433,12 @@ function gtvzlib:MakeWindow(Configs)
 		Rotation = 45
 	})MakeDrag(MainFrame)
 	
+	-- Adicionar contorno roxo na janela principal
+local roxoStroke = Instance.new("UIStroke")
+roxoStroke.Thickness = 2
+roxoStroke.Color = Color3.fromRGB(155, 48, 255) -- Roxo
+roxoStroke.Parent = MainFrame
+	
 	local MainCorner = Make("Corner", MainFrame)
 	
 	local Components = Create("Folder", MainFrame, {
